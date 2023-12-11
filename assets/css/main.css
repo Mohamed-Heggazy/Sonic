@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+/* ==================== Header ==================== */
+nav .container {
+  width: 85%;
+  margin: auto;
+}
+nav .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .row #nave {
+  width: 30%;
+  margin-top: 20px;
+}
+nav .container .row .logo h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.817px;
+  font-family: "Galano Grotesque Alt", sans-serif;
+  cursor: pointer;
+}
+nav .container .row .logo h1 span {
+  color: darkred;
+}
+nav .container .row .nav-links ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: "Galano Grotesque Alt", sans-serif;
+}
+nav .container .row .nav-links ul li {
+  padding: 16px 20px 0 20px;
+  transition: all 0.5s;
+}
+nav .container .row .nav-links ul li span {
+  position: relative;
+}
+nav .container .row .nav-links ul li span::before {
+  content: "";
+  position: absolute;
+  background-color: darkred;
+  bottom: -5px;
+  left: 0;
+  height: 0;
+  width: 0;
+  transition: all 0.5s;
+}
+nav .container .row .nav-links ul li:hover span::before {
+  width: 100%;
+  height: 3px;
+}
+nav .container .row .nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+nav .container .row .nav-links ul li a:hover {
+  color: darkred;
+}
+nav .container .row .bars i {
+  color: darkred;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 31px;
+  display: none;
+}
+nav .container .row .sign-login ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-family: "Galano Grotesque Alt", sans-serif;
+}
+nav .container .row .sign-login ul li {
+  padding: 16px 15px 0 0;
+}
+nav .container .row .sign-login ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+nav .container .row .sign-login ul .sign a:hover {
+  color: darkred;
+}
+nav .container .row .sign-login .login {
+  background-color: darkred;
+  padding: 10px;
+  border-radius: 50px;
+}
+nav .container .row .sign-login .login:hover {
+  background-color: rgba(139, 0, 0, 0.748);
+}
+nav .container .border {
+  width: 95%;
+  margin: auto;
+  border: 2px solid #44444460;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+/* ==================== Main ==================== */
+main .container {
+  width: 85%;
+  margin: auto;
+}
+main .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .row .text {
+  width: 35%;
+  color: white;
+  font-family: "Galano Grotesque Alt", sans-serif;
+}
+main .container .row .text h1 {
+  font-size: 58px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+main .container .row .text h1 span {
+  color: darkred;
+}
+main .container .row .text h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+main .container .row .text .botton {
+  width: 50%;
+}
+main .container .row .text .botton button {
+  width: 100%;
+  background-color: darkred;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+main .container .row .text .botton button:hover {
+  background-color: rgba(139, 0, 0, 0.748);
+}
+main .container .row .pic {
+  width: 25%;
+}
+main .container .row .pic img {
+  width: 100%;
+}
+
+/* ==================== Main ==================== */
+@media (max-width: 1320px) {
+  main .container .row .text {
+    width: 51%;
+  }
+  main .container .row .text .botton {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1140px) {
+  nav .container {
+    width: 90%;
+  }
+  nav .container .row .nav-links ul li {
+    padding: 16px 15px 0 15px;
+  }
+  main .container {
+    width: 90%;
+  }
+  main .container .row .text {
+    width: 63%;
+  }
+  main .container .row .text .botton {
+    width: 35%;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .container .row .nav-links {
+    display: none;
+  }
+  nav .container .row .sign-login {
+    display: none;
+  }
+  nav .container .row .bars i {
+    display: block;
+  }
+  main .container .row .text .botton {
+    width: 42%;
+  }
+}
+
+@media (max-width: 840px) {
+  main .container .row {
+    flex-wrap: wrap;
+  }
+  main .container .row .text {
+    width: 70%;
+  }
+  main .container .row .pic {
+    width: 40%;
+    margin: auto;
+  }
+  main .container .row .text .botton button {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 740px) {
+  main .container .row .text {
+    width: 82%;
+  }
+  main .container .row .pic {
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  nav .container {
+    width: 95%;
+  }
+  main .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .container .row #nave {
+    width: 100%;
+  }
+  main .container .row .text h1 {
+    font-size: 50px;
+  }
+  main .container .row .text h3 {
+    font-size: 18px;
+  }
+  main .container .row .text .botton button {
+    font-size: 15px;
+    width: 50%;
+  }
+  main .container .row .text .botton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main .container .row .text {
+    width: 95%;
+  }
+  main .container .row .text h1 {
+    font-size: 45px;
+  }
+  main .container .row .text .botton button {
+    font-size: 13px;
+    width: 100%;
+  }
+  main .container .row .text .botton {
+    width: 48%;
+  }
+}
