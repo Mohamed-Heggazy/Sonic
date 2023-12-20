@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
+  background-color: white;
 }
 /* ==================== Header ==================== */
 nav .container {
@@ -20,7 +20,7 @@ nav .container .row #nave {
   margin-top: 20px;
 }
 nav .container .row .logo h1 {
-  color: white;
+  color: black;
   font-size: 30px;
   font-weight: 900;
   letter-spacing: -0.817px;
@@ -28,7 +28,7 @@ nav .container .row .logo h1 {
   cursor: pointer;
 }
 nav .container .row .logo h1 span {
-  color: darkred;
+  color: #2dcacf;
 }
 nav .container .row .nav-links ul {
   display: flex;
@@ -46,7 +46,7 @@ nav .container .row .nav-links ul li span {
 nav .container .row .nav-links ul li span::before {
   content: "";
   position: absolute;
-  background-color: darkred;
+  background-color: #2dcacf;
   bottom: -5px;
   left: 0;
   height: 0;
@@ -59,15 +59,15 @@ nav .container .row .nav-links ul li:hover span::before {
 }
 nav .container .row .nav-links ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 15px;
   font-weight: 700;
 }
 nav .container .row .nav-links ul li a:hover {
-  color: darkred;
+  color: #2dcacf;
 }
 nav .container .row .bars i {
-  color: darkred;
+  color: #2dcacf;
   font-size: 25px;
   cursor: pointer;
   margin-top: 31px;
@@ -84,25 +84,26 @@ nav .container .row .sign-login ul li {
 }
 nav .container .row .sign-login ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 700;
 }
 nav .container .row .sign-login ul .sign a:hover {
-  color: darkred;
+  color: #2dcacf;
 }
 nav .container .row .sign-login .login {
-  background-color: darkred;
-  box-shadow: -3px 8px 24px 0px rgba(207, 45, 45, 0.33);
+  color: white;
+  background-color: #2dcacf;
+  box-shadow: -3px 8px 24px 0px rgba(45, 202, 207, 0.33);
   padding: 10px;
   border-radius: 50px;
 }
 nav .container .row .sign-login .login:hover {
-  background-color: rgba(139, 0, 0, 0.748);
+  background-color: #2dcacfc8;
 }
 nav .container .border {
   width: 95%;
   margin: auto;
-  border: 2px solid #44444460;
+  border: 2px solid #4444440f;
   margin-top: 15px;
   margin-bottom: 50px;
 }
@@ -115,7 +116,7 @@ main .container {
 main .container .ico {
   cursor: pointer;
   font-size: 40px;
-  color: white;
+  color: black;
 }
 
 main .container .row {
@@ -125,7 +126,7 @@ main .container .row {
 }
 main .container .row .text {
   width: 35%;
-  color: white;
+  color: black;
   font-family: "Galano Grotesque Alt", sans-serif;
 }
 main .container .row .text h1 {
@@ -134,7 +135,7 @@ main .container .row .text h1 {
   font-weight: 700;
 }
 main .container .row .text h1 span {
-  color: darkred;
+  color: #2dcacf;
 }
 main .container .row .text h3 {
   font-size: 22px;
@@ -146,18 +147,18 @@ main .container .row .text .botton {
 }
 main .container .row .text .botton button {
   width: 100%;
-  background-color: darkred;
+  background-color: #2dcacf;
   color: white;
   font-size: 16px;
   font-weight: 600;
   padding: 20px;
-  border-color: darkred;
+  border-color: #2dcacf;
   border-radius: 50px;
   cursor: pointer;
   margin-bottom: 20px;
 }
 main .container .row .text .botton button:hover {
-  background-color: rgba(139, 0, 0, 0.748);
+  background-color: #2dcacfc8;
 }
 main .container .row .pic {
   width: 25%;
